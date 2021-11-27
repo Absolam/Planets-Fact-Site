@@ -198,14 +198,18 @@ body {
 }
 
 .img-container img {
-  max-width: 25%;
+  max-width: 45%;
   margin-top: 25%;
+}
+
+.max-width-fix img {
+  max-width: 30%;
 }
 
 .img-surface-mercury {
   width: 15%;
   position: absolute;
-  bottom: -25%;
+  bottom: -10%;
 }
 
 .overview-container {
@@ -469,7 +473,7 @@ body {
   }
 
   .img-container img {
-    max-width: 35%;
+    /* width: 35%; */
   }
 
   .nav {
