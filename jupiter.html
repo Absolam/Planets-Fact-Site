@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Planets Fact Site</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="nav">
+          <h1>The Planets</h1>
+          <a href="#" class="hamburger-icon" onclick="menutest()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" class="hamburger-icon">
+              <g fill="#FFF" fill-rule="evenodd">
+                <path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z" />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="menu off">
+          <h2 class="desktop-title off">The Planets</h2>
+          <a class="menu-mercury menu-options" href="./index.html">
+            <p class="menu-icon mercury-icon">&nbsp;</p>
+            <p class="menu-text">mercury</p>
+            <img src="./assets/icon-chevron.svg" alt="#" />
+          </a>
+          <a class="menu-venus menu-options" href="./venus.html"">
+            <p class="menu-icon venus-icon">&nbsp;</p>
+            <p class="menu-text">venus</p>
+            <img src="./assets/icon-chevron.svg" alt="#" />
+          </a>
+          <a class="menu-earth menu-options" href="./earth.html">
+            <p class="menu-icon earth-icon">&nbsp;</p>
+            <p class="menu-text">earth</p>
+            <img src="./assets/icon-chevron.svg" alt="#" />
+          </a>
+          <a class="menu-mars menu-options" href="./mars.html">
+            <p class="menu-icon mars-icon">&nbsp;</p>
+            <p class="menu-text">mars</p>
+            <img src="./assets/icon-chevron.svg" alt="#" />
+          </a>
+          <a class="menu-jupiter menu-options" href="./jupiter.html">
+            <p class="menu-icon jupiter-icon">&nbsp;</p>
+            <p class="menu-text menu-text-highlight">jupiter</p>
+            <img src="./assets/icon-chevron.svg" alt="#" />
+          </a>
+          <a class="menu-saturn menu-options" href="./saturn.html">
+            <p class="menu-icon saturn-icon">&nbsp;</p>
+            <p class="menu-text">saturn</p>
+            <img src="./assets/icon-chevron.svg" alt="#" />
+          </a>
+          <a class="menu-uranus menu-options" href="./uranus.html">
+            <p class="menu-icon uranus-icon">&nbsp;</p>
+            <p class="menu-text">uranus</p>
+            <img src="./assets/icon-chevron.svg" alt="#" />
+          </a>
+          <a class="menu-neptune menu-options" href="./neptune.html">
+            <p class="menu-icon neptune-icon">&nbsp;</p>
+            <p class="menu-text">neptune</p>
+            <img src="./assets/icon-chevron.svg" alt="#" />
+          </a>
+        </div>
+        <div class="sub-header">
+          <p onclick="overviewFunc()" class="overview">Overview</p>
+          <p class="overview-box">&nbsp;</p>
+          <p onclick="structureFunc()" class="structure">Structure</p>
+          <p class="structure-box off">&nbsp;</p>
+          <p onclick="geologyFunc()" class="surface">Surface</p>
+          <p class="surface-box off">&nbsp;</p>
+        </div>
+      </header>
+
+      <div class="desktop-container">
+        <!-- Planet img -->
+        <div class="img-container">
+        <img
+        src="./assets/planet-jupiter.svg"
+        alt="planet jupiter"
+        class="img-overview-mercury"
+        />
+        <img
+        src="./assets/planet-jupiter-internal.svg"
+          alt="internal structure of jupiter"
+          class="img-structure-mercury off"
+          />
+          <img
+          src="./assets/geology-jupiter.png"
+          alt="surface of jupiter"
+          class="img-surface-mercury off"
+          />
+        </div>
+        <!-- Planet img -->
+        
+        <!-- Overview Content Start -->
+        <div class="overview-container">
+          <div class="tablet-container">
+          <h2 class="headingtwo">Jupiter</h2>
+          
+          <h3 class="description-text">
+            Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.
+          </h3>
+          <div class="source">
+            Source :
+            <a
+            href="https://en.wikipedia.org/wiki/Jupiter_(planet)"
+            target="_blank"
+            class="wiki-source"
+            >Wikipedia</a
+            >
+            <img src="./assets/icon-source.svg" alt="#" />
+          </div>
+        </div>
+        <div class="sub-header1 off">
+          <p onclick="overviewFunc(); overviewFuncTablet()" class="overview overviewtab">Overview</p>
+          <p onclick="structureFunc(); structureFuncTablet()" class="structure structuretab">Internal Structure</p>
+          <p onclick="geologyFunc(); surfaceFuncTablet()" class="surface surfacetab">Surface Geology</p>
+        </div>
+        
+      </div>
+      <!-- Overview Content End -->
+    </div>
+
+      <div class="stats">
+        <div class="rotation stat-flex">
+          <p class="stat-header">Rotation Time</p>
+          <p class="stat-number">9.93 Hours</p>
+        </div>
+        <div class="revolution stat-flex">
+          <p class="stat-header">Revolution Time</p>
+          <p class="stat-number">11.86 Years</p>
+        </div>
+        <div class="radius stat-flex">
+          <p class="stat-header">Radius</p>
+          <p class="stat-number">69,911 KM</p>
+        </div>
+        <div class="temp stat-flex">
+          <p class="stat-header">Average Temp.</p>
+          <p class="stat-number">-108°c</p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
